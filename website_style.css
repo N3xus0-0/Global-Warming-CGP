@@ -1,7 +1,7 @@
 @charset "utf-8";
 /*Created by Amani & Jason*/
 body{
-	background-image: url(altbackground3.png);
+	background-image: url(altbackground.png);
 	background-repeat: no-repeat;
     background-position: center;
 	background-attachment: fixed;
@@ -132,3 +132,4 @@ img{
     align-items: center;
   }
 }
+
