@@ -1,7 +1,7 @@
 @charset "utf-8";
 /*Created by Amani & Jason*/
 body{
-	background-image: url(zzzbackground.png);
+	background-image: url(background1.jpg);
 	background-repeat: no-repeat;
     background-position: center;
 	background-attachment: fixed;
@@ -132,5 +132,6 @@ img{
     align-items: center;
   }
 }
+
 
 
