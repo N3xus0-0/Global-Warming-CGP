@@ -1,6 +1,5 @@
 @charset "utf-8";
 /*Created by Amani & Jason*/
-body{
 body {
   background: transparent; /* fallback color */
   margin: 0;
@@ -150,6 +149,7 @@ img{
     align-items: center;
   }
 }
+
 
 
 
