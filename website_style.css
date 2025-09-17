@@ -1,12 +1,24 @@
 @charset "utf-8";
 /*Created by Amani & Jason*/
-body{
-	background-image: url(alt_image.png);
-	background-repeat: no-repeat;
-    background-position: center;
-	background-attachment: fixed;
-	background-size: cover;
-	background-color: black; 
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh; /* ensure it always fills the screen */
+  background-image: url('alt_image.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;   /* scale to fit all resolutions */
+  background-attachment: fixed; /* parallax effect on desktops */
+  background-color: black;  /* fallback if image fails */
+}
+
+/* On small screens (phones/tablets), disable fixed background */
+@media (max-width: 1024px) {
+  body {
+    background-attachment: scroll; /* fixes iOS/Android scaling */
+  }
+}
+
 
 table{
 	margin-left: auto;
@@ -132,6 +144,7 @@ img{
     align-items: center;
   }
 }
+
 
 
 
