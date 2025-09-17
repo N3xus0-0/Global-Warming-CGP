@@ -1,0 +1,134 @@
+@charset "utf-8";
+/*Created by Amani & Jason*/
+body{
+	background-image: url(altwallpaper.png);
+	background-repeat: no-repeat;
+    background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+	background-color: black; 
+}
+table{
+	margin-left: auto;
+	margin-right: auto;
+    border-collapse: collapse;
+	background: rgba(0, 0, 0, 0.088); /* transparency */
+	backdrop-filter: blur(5px); /* blur effect */
+	border-radius: 12px; /*smooths out edges*/
+	overflow: hidden;
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.181);
+}
+table{
+  width: 100%;    /* fill available space */
+  max-width: 1200px; /* don’t stretch too far on big screens */
+}
+td {
+  width: auto;
+  display: block;  /* on small screens stack them vertically */
+}
+@media (min-width: 768px) {
+  td{
+    display: table-cell; /* on larger screens return to table layout */
+  }
+}
+
+h2{
+	text-shadow: 2px 2px 5px rgba(0, 0 , 0 , 0.6);
+	font-family: Broadway, "Bauhaus 93", "Century Schoolbook", serif;
+	color: white;
+	padding: 10px;
+	text-underline-position: below;
+}
+li, p{
+	font-family: "Century Gothic", Aptos, Arial, sans-serif;
+	color: white;
+}
+td {
+  text-align: left;        /* horizontal: left */
+  vertical-align: top;     /* vertical: top */
+  padding: 15px; 
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: white;
+}
+h4,h3 {
+	font-family: "Bauhaus 93", "Century Schoolbook", Arial, serif;
+	color: white;
+	text-shadow: 2px 2px 5px rgba(0, 0 , 0 , 0.6);
+}
+img{
+	border-radius: 12px;
+	align-self: center;
+	vertical-align: middle;
+  /*changes to allow scale on all devices*/
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+.right{
+	text-align: right;
+}
+.image{
+  display: flex;           /* put image and text side by side */         
+  gap: 20px;               /*adds space between image and text*/
+  /*align-items: center; - vertically align them */
+	vertical-align: middle;
+
+}
+.actions h2 {
+  font-family: "Bauhaus 93";
+  font-size: 22pt;
+  text-align: center;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.circles {
+  display: flex;
+  justify-content: center;
+  gap: 40px;   /* space between cards */
+  flex-wrap: wrap; /* wrap nicely on smaller screens */
+}
+
+.circle {
+  max-width: 300px;
+}
+
+.circle img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%; /* makes the image a circle */
+  object-fit: cover; /* keeps image looking good */
+  margin-bottom: 15px;
+}
+
+.circle h3 {
+  font-family: "Century Schoolbook", "Bauhaus 93",  Arial, serif;
+  font-size: 16pt;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.cirlce p {
+  font-family: "Century Gothic", Arial, sans-serif;
+  font-size: 10pt;
+  color: white;
+}
+/*
+.space td {
+ padding
+}
+*/
+.list{
+  padding: 20px
+}
+/* Small screens (phones) */
+@media (max-width: 768px) {
+  .image {
+    flex-direction: column;
+    text-align: center;
+  }
+  .circles {
+    flex-direction: column;
+    align-items: center;
+  }
+}
