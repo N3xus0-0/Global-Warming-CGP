@@ -1,12 +1,30 @@
 @charset "utf-8";
 /*Created by Amani & Jason*/
 body{
-	background-image: url(altwallpaper.png);
-	background-repeat: no-repeat;
-    background-position: center;
-	background-attachment: fixed;
-	background-size: cover;
-	background-color: black; 
+body {
+  background: black; /* fallback color */
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* fixed, non-scrolling background across all devices */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(altwallpaper.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;   /* keeps background behind everything */
+}
+
 }
 table{
 	margin-left: auto;
@@ -132,3 +150,4 @@ img{
     align-items: center;
   }
 }
+
