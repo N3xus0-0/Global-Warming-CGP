@@ -11,12 +11,12 @@ body{
 table{
 	margin-left: auto;
 	margin-right: auto;
-    border-collapse: collapse;
-	background: rgba(0, 0, 0, 0.088); /* transparency */
-	backdrop-filter: blur(5px); /* blur effect */
+  border-collapse: collapse;
+  backdrop-filter: blur(4px); /* blur effect */
+	border-radius: 12px; /*smooths out edges*/
 	border-radius: 12px; /*smooths out edges*/
 	overflow: hidden;
-	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.181);
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 table{
   width: 100%;    /* fill available space */
