@@ -3,21 +3,27 @@
 body {
   margin: 0;
   padding: 0;
-  min-height: 100vh; /* ensure it always fills the screen */
-  background-image: url('alt_image.png');
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;   /* scale to fit all resolutions */
-  background-attachment: fixed; /* parallax effect on desktops */
-  background-color: black;  /* fallback if image fails */
+  min-height: 100vh;
+  position: relative;
+  background: black; /* fallback color */
+  overflow-x: hidden;
 }
 
-/* On small screens (phones/tablets), disable fixed background */
-@media (max-width: 1024px) {
-  body {
-    background-attachment: scroll; /* fixes iOS/Android scaling */
-  }
+/* Create a fixed background layer */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('alt_image.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  z-index: -1; /* keep it behind all content */
 }
+
 
 
 table{
@@ -144,6 +150,7 @@ img{
     align-items: center;
   }
 }
+
 
 
 
